@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "copper-items",
+	"version": "${version}",
+	"name": "Copper Items",
+	"description": "A mod that added more copper items!",
+	"authors": [
+		"WayneGameDev"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/CopperItems/CopperItems"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/copper-items/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.waynegamedev.copperitems.CopperItems"
+		],
+		"fabric-datagen": [
+			"net.waynegamedev.copperitems.CopperItemsDataGenerator"
+		],
+		"client": [
+			"net.waynegamedev.copperitems.CopperItemsClient"
+		]
+	},
+	"mixins": [
+		"copper-items.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
